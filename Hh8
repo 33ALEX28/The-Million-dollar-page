@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Million Pixel Page with Solana</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            margin: 20px 0;
+        }
+        #grid {
+            display: grid;
+            grid-template-columns: repeat(100, 10px);
+            grid-gap: 1px;
+            margin: 20px auto;
+        }
+        .pixel {
+            width: 10px;
+            height: 10px;
+            background-color: #ddd;
+            cursor: pointer;
+        }
+        .pixel.owned {
+            background-color: #000;
+        }
+        #status {
+            margin: 20px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Million Pixel Page with Solana</h1>
+    <p>Each pixel costs 1 Popcat token (Solana). Click to buy and customize!</p>
+    <div id="grid"></div>
+    <div id="status">Connect your wallet to start!</div>
+    <button id="connect-wallet">Connect Wallet</button>
+    <script src="script.js"></script>
+</body>
+</html>
